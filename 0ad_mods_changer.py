@@ -2,6 +2,8 @@ import time
 import subprocess
 import re
 # mod.enabledmods
+preMods = "mod public LocalRatings-master "
+
 whynot = "boonGUI-with-working-hardcoded-beepIdle" 
 whynot += " whynot autociv-2021-0824 HostEnhanced better_summary_charts" #  customrating0.25.2
 
@@ -28,8 +30,7 @@ if retCode == 0:
     with open (userCfg, 'r+' ) as f:
         content = f.read()
         f.truncate(0)
-        f.write(re.sub('^mod\.enabledmods[^\n]+', r'mod.enabledmods = "mod public ' + choice + '"', content, flags = re.M))
-        #f.truncate()
+        f.write(re.sub('^mod\.enabledmods[^\n]+', r'mod.enabledmods = "' + preMods + choice + '"', content, flags = re.M))
         f.close()
 
     # p2 = subprocess.Popen( [ kate, userCfg ] ) # works 22-0911_1150-40
