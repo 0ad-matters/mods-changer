@@ -2,7 +2,7 @@ import time
 import subprocess
 import re
 # mod.enabledmods
-preMods = "mod public LocalRatings-master "
+preMods = "mod public LocalRatings-master two-gendered-citizens "
 
 whynot = "boonGUI-with-working-hardcoded-beepIdle" 
 whynot += " whynot autociv-2021-0824 HostEnhanced better_summary_charts" #  customrating0.25.2
