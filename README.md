@@ -15,7 +15,7 @@ and get the entries behind `enabledmods` in your `user.cfg`
 
 add your wanted mods behind 
 
-plus += "..."
+`plus += "..."`
 
 like
 
