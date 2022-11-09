@@ -3,7 +3,7 @@ changing your mod profiles fast. AutoKey script tested in (k)ubuntu
 
 # how to change config
 
-1. open folowing files:
+open folowing files:
 - `0ad_mods_changer.py`
 check user.cfg path is correct :
 ```python
